@@ -1,0 +1,17 @@
+{
+    "name": "imingxin\/taobao-top-client",
+    "description": "A Taobao SDK.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "imingxin",
+            "email": "imingxin@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Imingxin\\TaobaoTopClient\\": "src"
+        }
+    }
+}
