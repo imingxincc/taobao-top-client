@@ -17,12 +17,9 @@ class TopClientServiceProvider extends \Illuminate\Support\ServiceProvider
     public function register()
     {
         $this->app->singleton(TopClient::class, function($app) {
-            // $config = $app->make('config')->get('taobao');
-            $name = $app['config']['taobao.default'];
-            $config = $app['config']["taobao.connections.{$name}"];
-            $obj = new TopClient($config['app_key'], $config['app_secret']);
-            $obj->format = $config['format'] ?? 'json';
-            return $obj;
+            $taobaoConfig = $app->make('config')->get('taobao');
+            $config = $taobaoConfig['connections'][$taobaoConfig['default']];
+            return new TopClient($config);
         });
 
         $this->app->alias(TopClient::class, 'topClient');

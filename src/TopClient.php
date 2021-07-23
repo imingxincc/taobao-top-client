@@ -28,10 +28,14 @@ class TopClient
         return $this->appkey;
     }
 
-    public function __construct($appkey = '', $secretKey = '')
+    public function __construct(array $config)
     {
-        $this->appkey = $appkey;
-        $this->secretKey = $secretKey ;
+        if (!array_key_exists('app_key', $config) || !array_key_exists('app_secret', $config)) {
+            throw new \Exception('参数错误');
+        }
+        $this->appkey = $config['app_key'];
+        $this->secretKey = $config['app_secret'];
+        $this->format = @$config['format'] ?? 'json';
     }
 
     protected function generateSign($params)
