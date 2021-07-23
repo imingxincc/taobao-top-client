@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * data
@@ -6,10 +7,10 @@
  */
 class Results
 {
-	
-	/** 
+
+	/**
 	 * data
 	 **/
-	public $data;	
+	public $data;
 }
 ?>

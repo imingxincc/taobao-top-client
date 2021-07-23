@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * 权益扩展信息
@@ -6,20 +7,20 @@
  */
 class PromotionExtend
 {
-	
-	/** 
+
+	/**
 	 * 权益链接
 	 **/
 	public $promotion_url;
-	
-	/** 
+
+	/**
 	 * 权益推荐商品
 	 **/
 	public $recommend_item_list;
-	
-	/** 
+
+	/**
 	 * 有价券信息
 	 **/
-	public $youjia_coupon_info;	
+	public $youjia_coupon_info;
 }
 ?>

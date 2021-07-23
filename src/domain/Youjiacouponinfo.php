@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * 有价券信息
@@ -6,15 +7,15 @@
  */
 class Youjiacouponinfo
 {
-	
-	/** 
+
+	/**
 	 * 有价券商品id
 	 **/
 	public $item_id;
-	
-	/** 
+
+	/**
 	 * 商品链接
 	 **/
-	public $url;	
+	public $url;
 }
 ?>

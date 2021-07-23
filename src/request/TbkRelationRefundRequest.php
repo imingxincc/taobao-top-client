@@ -1,19 +1,21 @@
 <?php
+namespace Imingxin\TaobaoTopClient\request;
+
 /**
  * TOP API: taobao.tbk.relation.refund request
- * 
+ *
  * @author auto create
  * @since 1.0, 2021.04.29
  */
 class TbkRelationRefundRequest
 {
-	/** 
+	/**
 	 * 参数option
 	 **/
 	private $searchOption;
-	
+
 	private $apiParas = array();
-	
+
 	public function setSearchOption($searchOption)
 	{
 		$this->searchOption = $searchOption;
@@ -29,17 +31,17 @@ class TbkRelationRefundRequest
 	{
 		return "taobao.tbk.relation.refund";
 	}
-	
+
 	public function getApiParas()
 	{
 		return $this->apiParas;
 	}
-	
+
 	public function check()
 	{
-		
+
 	}
-	
+
 	public function putOtherTextParam($key, $value) {
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;

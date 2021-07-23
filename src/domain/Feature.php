@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * 类目属性
@@ -6,15 +7,15 @@
  */
 class Feature
 {
-	
-	/** 
+
+	/**
 	 * 属性键
 	 **/
 	public $attr_key;
-	
-	/** 
+
+	/**
 	 * 属性值
 	 **/
-	public $attr_value;	
+	public $attr_value;
 }
 ?>

@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * 结果
@@ -6,25 +7,25 @@
  */
 class OpenAccountResult
 {
-	
-	/** 
+
+	/**
 	 * 错误码
 	 **/
 	public $code;
-	
-	/** 
+
+	/**
 	 * Open Account信息
 	 **/
 	public $data;
-	
-	/** 
+
+	/**
 	 * 错误信息
 	 **/
 	public $message;
-	
-	/** 
+
+	/**
 	 * 是否成功
 	 **/
-	public $successful;	
+	public $successful;
 }
 ?>

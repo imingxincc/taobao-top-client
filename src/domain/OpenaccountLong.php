@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * Open Account模型
@@ -6,25 +7,25 @@
  */
 class OpenaccountLong
 {
-	
-	/** 
+
+	/**
 	 * 返回码
 	 **/
 	public $code;
-	
-	/** 
+
+	/**
 	 * 返回数据
 	 **/
 	public $data;
-	
-	/** 
+
+	/**
 	 * 返回信息
 	 **/
 	public $message;
-	
-	/** 
+
+	/**
 	 * 是否成功
 	 **/
-	public $successful;	
+	public $successful;
 }
 ?>

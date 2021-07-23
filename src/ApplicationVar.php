@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient;
 
 class ApplicationVar
 {
@@ -17,12 +18,12 @@ class ApplicationVar
   {
    		if (!is_string($var_name) || empty($var_name))
     		return false;
-   
+
    		$this->application[$var_name] = $var_value;
   }
 
   public function write(){
-      $this->app_data = @serialize($this->application);    
+      $this->app_data = @serialize($this->application);
       $this->__writeToFile();
   }
 

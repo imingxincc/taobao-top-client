@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * 选品库信息
@@ -6,15 +7,15 @@
  */
 class FavoritesInfo
 {
-	
-	/** 
+
+	/**
 	 * 选品库详细信息
 	 **/
 	public $favorites_list;
-	
-	/** 
+
+	/**
 	 * 选品库总数量
 	 **/
-	public $total_count;	
+	public $total_count;
 }
 ?>

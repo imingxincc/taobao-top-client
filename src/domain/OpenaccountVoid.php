@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * Open Account模型
@@ -6,20 +7,20 @@
  */
 class OpenaccountVoid
 {
-	
-	/** 
+
+	/**
 	 * 错误码
 	 **/
 	public $code;
-	
-	/** 
+
+	/**
 	 * 返回信息
 	 **/
 	public $message;
-	
-	/** 
+
+	/**
 	 * 是否成功
 	 **/
-	public $successful;	
+	public $successful;
 }
 ?>

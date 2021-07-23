@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * 埋点信息
@@ -6,10 +7,10 @@
  */
 class Trackparams
 {
-	
-	/** 
+
+	/**
 	 * empty
 	 **/
-	public $empty;	
+	public $empty;
 }
 ?>

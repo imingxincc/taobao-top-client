@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * 权益推荐商品
@@ -6,15 +7,15 @@
  */
 class RecommendItemList
 {
-	
-	/** 
+
+	/**
 	 * 权益推荐商品id
 	 **/
 	public $item_id;
-	
-	/** 
+
+	/**
 	 * 商品链接
 	 **/
-	public $url;	
+	public $url;
 }
 ?>

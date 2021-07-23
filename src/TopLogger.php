@@ -1,4 +1,6 @@
 <?php
+namespace Imingxin\TaobaoTopClient;
+
 class TopLogger
 {
 	public $conf = array(

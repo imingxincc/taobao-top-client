@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * 扩展属性
@@ -6,10 +7,10 @@
  */
 class Extend
 {
-	
-	/** 
+
+	/**
 	 * empty
 	 **/
-	public $empty;	
+	public $empty;
 }
 ?>

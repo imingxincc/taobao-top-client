@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * 商品信息-商品关联词
@@ -6,15 +7,15 @@
  */
 class WordMapData
 {
-	
-	/** 
+
+	/**
 	 * 链接-商品相关关联词落地页地址
 	 **/
 	public $url;
-	
-	/** 
+
+	/**
 	 * 商品相关的关联词
 	 **/
-	public $word;	
+	public $word;
 }
 ?>

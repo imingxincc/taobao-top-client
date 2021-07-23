@@ -1,4 +1,5 @@
 <?php
+namespace Imingxin\TaobaoTopClient\domain;
 
 /**
  * model
@@ -6,10 +7,10 @@
  */
 class RightsSendRptDTO
 {
-	
-	/** 
+
+	/**
 	 * 渠道关系id的发放数据
 	 **/
-	public $relation_rpt_list;	
+	public $relation_rpt_list;
 }
 ?>

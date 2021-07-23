@@ -13,5 +13,12 @@
         "psr-4": {
             "Imingxin\\TaobaoTopClient\\": "src"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Imingxin\\TaobaoTopClient\\TopClientServiceProvider"
+            ]
+        }
     }
 }
