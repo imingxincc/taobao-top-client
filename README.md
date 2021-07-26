@@ -32,6 +32,8 @@ $ vim .env
 
 ## 使用
 
+使用示例：
+
 ```php
 use Imingxin\TaobaoTopClient\request\TbkTpwdCreateRequest;
 .
