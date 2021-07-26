@@ -1,27 +1,60 @@
 <h1 align="center"> taobao-top-client </h1>
 
-<p align="center"> A Taobao SDK..</p>
+<p align="center"> A Taobao Top SDK For Laravel7+. </p>
 
+## 说明
 
-## Installing
+**本扩展包不支持 Composer 1.x 安装，请确保升级到 Composer 2+ 后使用。**
+
+## 安装
 
 ```shell
 $ composer require imingxin/taobao-top-client -vvv
 ```
 
-## Usage
+## 配置
 
-TODO
+发布资源，输入如下命令后会列出一系列 Provider 让你选择，你从中选出所需要的序号就可以了。
 
-## Contributing
+```shell
+$ php artisan vendor:publish
+```
 
-You can contribute in one of three ways:
+添加环境变量
 
-1. File bug reports using the [issue tracker](https://github.com/imingxin/taobao-top-client/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com/imingxin/taobao-top-client/issues).
-3. Contribute new features or update the wiki.
+```bash
+$ vim .env
 
-_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
+# 追加应用的 AppKey 和  AppSecret 到环境变量配置文件中
+# TAOBAO_APP_KEY=123456789
+# TAOBAO_APP_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+## 使用
+
+```php
+use Imingxin\TaobaoTopClient\request\TbkTpwdCreateRequest;
+.
+.
+.
+
+$req = new TbkTpwdCreateRequest;
+$req->setUrl("https://s.click.taobao.com/aTih7ku");
+$resp = app('topClient')->execute($req);
+return response()->json($resp);
+```
+
+响应示例：
+
+```json
+{
+    "data": {
+        "model": "5￥VU1pXk3w4rS￥ https://m.tb.cn/h.4AiSUnj  【急速发货】TP-LINK全千兆无线路由器 千兆端口家用高速wifi穿墙王tplink双频5G大户型游戏IPv6宿舍学生寝室",
+        "password_simple": "￥VU1pXk3w4rS￥"
+    },
+    "request_id": "15q60nriu82wz"
+}
+```
 
 ## License
 
